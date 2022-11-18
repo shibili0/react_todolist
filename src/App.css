@@ -46,3 +46,37 @@ form > button{margin-left:20px;
   color: aliceblue;
   font-weight: 500;
 } */
+.title {
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.btn {
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 50px;
+}
+* {
+  text-align: center;
+}
+p {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.btn-1 {
+  width: fit-content;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: right;
+  font-weight: bold;
+  margin-left: 20px;
+  font-size: 50px;
+}
+.input{font-size: 50px;}
