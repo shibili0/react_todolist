@@ -1,19 +1,18 @@
 import React from 'react'
-// src/App.js
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   const [todos,setTodos] = React.useState([
-    { id: 1, text: "Wash dishes", done: false },
-    { id: 2, text: "Do laundry", done: false },
-    { id: 3, text: "Take shower", done: false }
   ])
 
   return (
     <div>
-      <h1>Todo List</h1>
-      <TodoList todos={todos} setTodos={setTodos}/>
+      <h1>TODO LIST</h1>
       <AddTodo setTodos={setTodos}/>
+      <TodoList todos={todos} setTodos={setTodos}/>
+      
     </div>
   );
 }
@@ -85,8 +84,10 @@ function AddTodo({ setTodos }) {
   function handleAddTodo(event) {
     event.preventDefault();
     const text = event.target.elements.addTodo.value;
+    let id = Math.floor(Math.random()*100)
+    console.log(id)
     const todo = {
-      id: 4,
+      id,
       text,
       done: false
     };
@@ -99,7 +100,7 @@ function AddTodo({ setTodos }) {
   return (
     <form onSubmit={handleAddTodo}>
       <input name="addTodo" placeholder="Add todo" ref={inputRef} />
-      <button type="submit">Submit</button>
+      <Button variant="primary" type='submit'>Primary</Button>{' '}
     </form>
   );
 }

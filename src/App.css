@@ -10,25 +10,39 @@ h1 {
 }
 p{align-items: center;
     text-align: center;
-  font-size: 50px;}
-li {
-    align-items: center;
-    text-align: center;
   font-size: 50px;
+font-weight: 400;
+color: #553c9a;}
+li {
+    text-align: left;
+    margin-left: 10px;
+  font-size: 50px;
+  width: fit-content;
+  color: aliceblue;
 }
-.box{height: 500px;
+.box{height: 100%;
 width: 800px;
-background-color: #553c9a;
 justify-content: center;
 margin-left: 30%;
+background-color: #553c9a;
 border-radius: 15px 15px 15px 15px;}
 form{align-items: center;
     text-align: center;
+    margin-top: 20px;
   font-size: 50px;
 
 }
 form > input{
     padding: 20px;
+    font-size: 40px;
+    border-radius: 15px 15px 15px 15px;
 }
 form > button{margin-left:20px;
+  background-color: #553c9a;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: aliceblue;
+  font-weight: 500;
 } */
